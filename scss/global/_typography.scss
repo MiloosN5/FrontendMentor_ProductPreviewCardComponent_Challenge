@@ -1,0 +1,129 @@
+@use '../util' as u;
+@use 'colors' as c;
+
+//---------------------- GOOGLE FONTS ----------------------//
+
+    // elements using Montserrat
+    .perfume {
+        &__details {
+            &__subtitle,
+            &__description,
+            &__prices__regularPrice,
+            &__addToCart {
+                font-family: u.$font-Montserrat;
+            }
+        }
+    }
+
+    .footer {
+        font-family: u.$font-Montserrat;
+    }
+
+
+    // elements using Fraunces
+    .perfume {
+        &__details {
+            &__maintitle,
+            &__prices__discountPrice {
+                font-family: u.$font-Fraunces;
+            }
+        }
+    }
+
+//---------------------- HEADINGS (h1-h6) ----------------------//
+
+    h1 {
+        font-weight: u.$font-bold;
+        font-size: u.rem(30);
+        line-height: 1.04;
+        color: c.$very-dark-blue;
+    }
+
+    h2 {
+        font-size: u.rem(33);
+        font-weight: u.$font-bold;
+        color: c.$dark-cyan;
+    }
+
+    .perfume {
+        &__details {
+            &__prices {
+                &__discountPrice {
+                    font-size: max(min(u.rem(33), 12vw), u.rem(12));
+                }
+            }
+        }
+    }
+
+    h3 {
+        font-weight: u.$font-medium;
+        text-transform: uppercase;
+        font-size: u.rem(13.5);
+        letter-spacing: 3px;
+        color: c.$dark-grayish-blue;
+
+    }
+
+//---------------------- PARAGRAPH ----------------------//
+
+    .perfume {
+        &__details {
+            p {
+                font-weight: u.$font-medium;
+                font-size: u.rem(14);
+                line-height: 1.65;
+                color: c.$dark-grayish-blue;
+            }
+            &__prices {
+                p {
+                    font-weight: u.$font-medium;
+                    font-size: u.rem(13);
+                    line-height: 1.65;
+                    color: c.$dark-grayish-blue;
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+
+//---------------------- SPAN ----------------------//
+
+    .perfume {
+        &__details {
+            &__addToCart { 
+                span {
+                    line-height: 1.5;
+                    font-weight: u.$font-medium;
+                }
+            }
+        }
+    }
+
+//---------------------- BUTTON ----------------------//
+
+    .perfume {
+        &__details {
+            &__addToCart {
+                color: c.$white;
+                &__cartText {
+                    font-size: u.rem(13);
+                    
+                }
+            }
+        }
+    } 
+
+//---------------------- FOOTER ----------------------//
+
+    .footer { 
+        font-size: u.rem(14); 
+        text-align: center; 
+        a {
+            color: c.$font-color-footer; 
+        }
+    }
+
+
+
+
+

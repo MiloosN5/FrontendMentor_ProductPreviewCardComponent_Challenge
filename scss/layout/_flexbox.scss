@@ -1,0 +1,106 @@
+@use '../global' as g;
+@use '../util' as u;
+
+.perfume {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-block-end: 8px;
+    width: u.rem(345);
+    max-width: 95%;
+    @include u.breakpoint(large) {
+        flex-direction: row;
+        width: u.rem(600);
+    }
+    &__image {
+        font-size: 0;
+        @include u.breakpoint(large) {
+            flex-direction: row;
+            width: u.rem(300);
+        }
+    }
+    &__details {
+        padding-inline: 25px;
+        padding-block-start: 23px;
+        padding-block-end: 25px;
+        background-color: g.$white;
+        @include u.breakpoint(large) {
+            flex-direction: row;
+            width: u.rem(300);
+            padding-inline-start: 30px;
+        }
+        &__subtitle {
+            padding-block-end: 11px;
+            @include u.breakpoint(large) {
+                padding-block-start: 10px;
+                padding-block-end: 19px;
+            }
+        }
+        &__maintitle {
+            padding-block-end: 17px;
+            @include u.breakpoint(large) {
+                padding-block-end: 27px;
+                padding-inline-end: 15px;
+            }
+        }
+        &__description {
+            padding-block-end: 19px;
+            @include u.breakpoint(large) {
+                padding-block-end: 23px;
+            }
+        }
+        &__prices {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-block-end: 15px;
+            @include u.breakpoint(large) {
+                padding-block-end: 25px;
+            }
+            &__regularPrice {
+                padding-block-start: 9px; 
+                padding-inline-start: 18px;   
+            }
+        }
+        &__addToCart {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: auto;
+            padding: 14px;
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid white;
+            background-color: g.$dark-cyan;
+            @include u.breakpoint(large) {
+               
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                background-color: g.$dark-cyan-hover;
+                opacity: 0;
+                transition: opacity 0.5s;
+                border-radius: 10px;
+            }
+            &:hover::before {
+                opacity: 1;
+            }
+            &__cartIcon {
+                position: relative;
+                width: u.rem(15);
+                margin-inline-end: 10px;
+                margin-block: auto;
+            }
+            &__cartText {
+                position: relative;
+            }
+        }
+    }
+}
+

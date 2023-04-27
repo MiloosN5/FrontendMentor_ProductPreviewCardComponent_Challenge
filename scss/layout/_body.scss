@@ -1,0 +1,12 @@
+@use '../global' as g;
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: g.$cream;
+    // padding-inline: 15px;
+    padding-block: 28px;
+    min-height: 100vh;
+}
