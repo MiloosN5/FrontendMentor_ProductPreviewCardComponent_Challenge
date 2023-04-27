@@ -61,7 +61,7 @@ Users should be able to:
     <main class="perfume">
         <picture class="perfume__image">
             <source media="(min-width: 56.25em)" srcset="images/image-product-desktop.jpg" >
-            <img class="" src="images/image-product-mobile.jpg" alt="picture of Adam Keyes" width="100%" height="auto">
+            <img class="" src="images/image-product-mobile.jpg" alt="picture of the perfume" width="100%" height="auto">
         </picture>
         ...
     </main>
