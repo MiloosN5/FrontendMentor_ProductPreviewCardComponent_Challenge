@@ -51,9 +51,9 @@ Users should be able to:
 
 ### What I learned
 
-* Along with responsive layout, this project was helpful to understand making images responsive using <picture> tag. 
+* Along with responsive layout, this project was helpful to understand making images responsive using &lt;picture&gt; tag. 
 * Relations between texts helped you to understand typographic hierarchy - when to choose paragraph or headings for instance.
-* In this case, the hover effect on the button was useful to see how absolute element are relative to its parent. In addition, since the clicking did not redirect you to other page but made a action of submitting, it can helped you understand the difference between <button> and <a> tags.
+* In this case, the hover effect on the button was useful to see how absolute element are relative to its parent. In addition, since the clicking did not redirect you to other page but made a action of submitting, it can helped you understand the difference between &lt;button&gt; and &lt;a&gt; tags.
 
 
   * responsive image
